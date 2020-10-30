@@ -1,5 +1,6 @@
 import 'aurelia-polyfills';
 import { Aurelia, PLATFORM } from 'aurelia-framework';
+import { SortValueConverter } from 'sort-value-converter';
 
 declare const PRODUCTION: boolean;
 
@@ -19,6 +20,7 @@ export async function configure(aurelia: Aurelia) {
             return val;
           }
         },
+        SortValueConverter,
       ] as any[]);
 
     if (!PRODUCTION) {

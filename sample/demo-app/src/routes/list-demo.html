@@ -10,7 +10,7 @@
   </div>
 
   <div ref="parentElement">
-    <div virtual-repeat.for="item of objectArray" class="contact-list-item ${item.name}">
+    <div virtual-repeat.for="item of objectArray | sort:'country'" class="contact-list-item ${item.name}">
       <div class="contact-item">
         <div class="avatar" click.trigger="click(item)" css="background-color: ${item.color}">${item.firstLetter}</div>
         <div class="name"> ${$index} ${item.name} </div>

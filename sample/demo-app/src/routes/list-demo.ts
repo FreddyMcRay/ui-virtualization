@@ -13,7 +13,7 @@ export class ListRoute {
   constructor() {
 
     this.objectArray = [];
-    this.numberOfItems = 100;
+    this.numberOfItems = 2;
     this.isSelected = false;
     this.elementsCount = 0;
   }
